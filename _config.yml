@@ -29,7 +29,7 @@ twitter_username: WinnerTakesFull
 github_username: A1exan10er
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
