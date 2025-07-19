@@ -1,0 +1,26 @@
+FROM ubuntu:22.04
+
+# Install cross-compilation tools and dependencies
+RUN apt-get update && apt-get install -y \
+    mingw-w64 \
+    cmake \
+    git \
+    wget \
+    unzip \
+    pkg-config \
+    build-essential
+
+# Set up working directory
+WORKDIR /build
+
+# Download and build Windows versions of dependencies
+# This is a simplified example - you may need to adjust paths and versions
+
+# Copy source code
+COPY PDF2JPG_Windows.cpp .
+COPY build_windows.sh .
+
+# Note: You'll need to provide Windows libraries or build them
+# This Dockerfile serves as a template for the cross-compilation environment
+
+CMD ["./build_windows.sh"]

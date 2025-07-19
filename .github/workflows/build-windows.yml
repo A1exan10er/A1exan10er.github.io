@@ -1,0 +1,40 @@
+name: Build Windows Executable
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup MSYS2
+      uses: msys2/setup-msys2@v2
+      with:
+        msystem: MINGW64
+        update: true
+        install: >-
+          mingw-w64-x86_64-gcc
+          mingw-w64-x86_64-cmake
+          mingw-w64-x86_64-poppler
+          mingw-w64-x86_64-opencv
+          mingw-w64-x86_64-pkg-config
+    
+    - name: Build PDF2JPG
+      shell: msys2 {0}
+      run: |
+        cd tools
+        g++ -std=c++17 -O2 PDF2JPG_Windows.cpp -o PDF2JPG.exe \
+          $(pkg-config --cflags --libs poppler-cpp opencv4) \
+          -static-libgcc -static-libstdc++
+    
+    - name: Upload Windows executable
+      uses: actions/upload-artifact@v3
+      with:
+        name: PDF2JPG-Windows
+        path: tools/PDF2JPG.exe

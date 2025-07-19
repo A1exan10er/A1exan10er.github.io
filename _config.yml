@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://a1exan10er.github.io" # the base hostname & protocol for your site
 repository: "A1exan10er/A1exan10er.github.io"
-teaser: /assets/images/Matterhorn.jpg # path to the teaser image
+# teaser: /assets/images/Matterhorn.jpg # path to the teaser image
 twitter_username: WinnerTakesFull
 github_username: A1exan10er
 
@@ -58,3 +58,16 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
