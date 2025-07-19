@@ -6,8 +6,8 @@ categories: [转载]
 tags: [历史, 政治, 皇帝, 读书, 转载]
 excerpt: "中国历史上，皇帝永远正确，责任总归奴才和百姓。辛可深刻剖析了这一悖论。"
 layout: single
-reading_time: true
-words_per_minute: 200
+read_time: false
+words_per_minute: 300
 ---
 
 **作者简介：** 辛可，当代作家，主要作品有《唐僧写给观音的36封信》、《逼下梁山》。
