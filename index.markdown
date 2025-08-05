@@ -3,8 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-# layout: splash
-
+# layout: single
+author_profile: true
 # header:
   # image: /assets/images/Matterhorn.jpg # path to the header image
 

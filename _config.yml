@@ -21,7 +21,7 @@
 title: A1exan10er's Site
 subtitle: A place for my thoughts and projects
 name: A1exan10er
-email: yangtianqwer@yahoo.com
+email: yangtianqwer@outlook.com
 description: "Welcome to A1exan10er's personal website. This site is built with Jekyll and hosted on GitHub Pages."
 url: "https://a1exan10er.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -31,8 +31,26 @@ logo: /assets/images/mission_possible.png # Site masthead logo
 masthead_title: "Mission: Possible" # Site masthead title
 breadcrumbs: true # Show breadcrumbs in the header
 enable_copy_code_button: true
+search: true # Enable search functionality
 twitter_username: WinnerTakesFull
 github_username: A1exan10er
+
+author:
+  name     : "Tianyu Yang |     a.k.a. A1exan10er 😎"
+  avatar   : "/assets/images/logo.svg"
+  email    : "yangtianqwer@outlook.com"
+  bio      : "A passionate developer and tech enthusiast."
+  location : "Stuttgart, Germany"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tianyu-yang-as/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/A1exan10er/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/captaina1ex/"
 
 # Build settings
 # remote_theme: "mmistakes/minimal-mistakes"
