@@ -22,22 +22,40 @@ title: A1exan10er's Site
 subtitle: A place for my thoughts and projects
 name: A1exan10er
 email: yangtianqwer@yahoo.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to A1exan10er's personal website. This site is built with Jekyll 
-  and hosted on GitHub Pages.
-baseurl: "" # the subpath of your site, e.g. /blog
+description: "Welcome to A1exan10er's personal website. This site is built with Jekyll and hosted on GitHub Pages."
 url: "https://a1exan10er.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
 repository: "A1exan10er/A1exan10er.github.io"
-# teaser: /assets/images/Matterhorn.jpg # path to the teaser image
+# teaser: /assets/images/teaser_hello_world.png # path to the teaser image
+logo: /assets/images/mission_possible.png # Site masthead logo
+masthead_title: "Mission: Possible" # Site masthead title
+breadcrumbs: true # Show breadcrumbs in the header
+enable_copy_code_button: true
 twitter_username: WinnerTakesFull
 github_username: A1exan10er
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes"
+# remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+locale: "en-US" # the locale for your site, e.g. "en-US"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
+
+# Permalink structure (removes date from URLs)
+permalink: /:categories/:title/
+
+# Jekyll Archives configuration
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    category: '/categories/:name/'
+    tag: '/tags/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -66,6 +84,7 @@ defaults:
       type: posts
     values:
       layout: single
+      show_date: true
       author_profile: true
       read_time: true
       comments: true
