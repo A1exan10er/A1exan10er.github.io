@@ -18,25 +18,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: A1exan10er's Site
+# title: A1exan10er's Site
+title: "Mission: Possible"
 subtitle: A place for my thoughts and projects
-name: A1exan10er
-email: yangtianqwer@outlook.com
+# name: A1exan10er
+# email: yangtianqwer@outlook.com
 description: "Welcome to A1exan10er's personal website. This site is built with Jekyll and hosted on GitHub Pages."
 url: "https://a1exan10er.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 repository: "A1exan10er/A1exan10er.github.io"
 # teaser: /assets/images/teaser_hello_world.png # path to the teaser image
 logo: /assets/images/mission_possible.png # Site masthead logo
-masthead_title: "Mission: Possible" # Site masthead title
+# masthead_title: "Mission: Possible" # Site masthead title
 breadcrumbs: true # Show breadcrumbs in the header
 enable_copy_code_button: true
 search: true # Enable search functionality
 twitter_username: WinnerTakesFull
 github_username: A1exan10er
 
+# Site author information
 author:
-  name     : "Tianyu Yang |     a.k.a. A1exan10er 😎"
+  name     : "Tianyu Yang | a.k.a. A1exan10er 😎"
   avatar   : "/assets/images/logo.svg"
   email    : "yangtianqwer@outlook.com"
   bio      : "A passionate developer and tech enthusiast."
@@ -52,10 +54,23 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/captaina1ex/"
 
+# Site footer settings
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tianyu-yang-as/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/A1exan10er/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/captaina1ex/"
+
 # Build settings
 # remote_theme: "mmistakes/minimal-mistakes"
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale: "en-US" # the locale for your site, e.g. "en-US"
 plugins:
   - jekyll-feed
