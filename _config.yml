@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 # title: A1exan10er's Site
-title: "Mission: Possible"
+title: "Mission: Possible" # Site title, shown in the header and browser tab
 subtitle: A place for my thoughts and projects
 # name: A1exan10er
 # email: yangtianqwer@outlook.com
