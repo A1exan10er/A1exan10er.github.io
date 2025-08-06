@@ -1,9 +1,7 @@
 ---
-# # layout: posts
-# layout: single
-# # title:  "Welcome to Jekyll!"
+layout: single
+title:  "Welcome to Jekyll!"
 date:   2025-07-17 12:09:01 +0200
-# categories: jekyll update
 categories: jekyll
 tags: jekyll, welcome
 header:
