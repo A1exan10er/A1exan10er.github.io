@@ -15,6 +15,7 @@ header:
     - label: "Back to Home"
       url: "/"
 lightbox: true
+permalink: /gallery/
 ---
 
 This post includes a collection of photos capturing moments from my travel adventures. Each image tells a story, reflecting the beauty and diversity of the places I've visited.

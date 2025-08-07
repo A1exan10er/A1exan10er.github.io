@@ -85,6 +85,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
+  gallery:
+    output: true
+    permalink: /gallery/:title/
 
 # Jekyll Archives configuration
 jekyll-archives:
