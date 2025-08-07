@@ -2,7 +2,8 @@
 layout: single
 title:  "Welcome to Jekyll!"
 date:   2025-07-17 12:09:01 +0200
-categories: jekyll
+# categories: jekyll
+categories: [posts]
 tags: jekyll, welcome
 header:
   teaser: /assets/images/teaser_hello_world.png # path to the teaser image

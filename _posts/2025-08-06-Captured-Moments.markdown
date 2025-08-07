@@ -3,7 +3,7 @@ title: "Captured Moments"
 layout: single
 date: 2025-08-06
 author: tianyu
-categories: [photography]
+categories: [gallery]
 tags: [photos, gallery]
 classes: wide
 excerpt: "A collection of photos from my travel adventures."

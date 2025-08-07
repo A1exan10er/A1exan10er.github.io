@@ -80,6 +80,12 @@ plugins:
 # Permalink structure (removes date from URLs)
 permalink: /:categories/:title/
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
 # Jekyll Archives configuration
 jekyll-archives:
   enabled:
@@ -87,8 +93,8 @@ jekyll-archives:
     - tags
   layout: archive
   permalinks:
-    category: '/categories/:name/'
-    tag: '/tags/:name/'
+    category: '/categories/:title/'
+    tag: '/tags/:title/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
