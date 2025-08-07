@@ -10,7 +10,7 @@ excerpt: "A collection of photos from my travel adventures."
 header:
   overlay_image: /assets/images/gallery/IMG_3537.JPEG
   overlay_filter: 0.3
-  caption: "Captured moments in nature and city life"
+  caption: "Oia, Santorini, Greece"
   actions:
     - label: "Back to Home"
       url: "/"
