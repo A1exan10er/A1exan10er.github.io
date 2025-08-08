@@ -29,6 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 repository: "A1exan10er/A1exan10er.github.io"
 # teaser: /assets/images/teaser_hello_world.png # path to the teaser image
 logo: /assets/images/mission_possible.png # Site masthead logo
+favicon: /assets/images/mission_possible.png # Favicon shown in the browser tab (use a 32x32 or 48x48 PNG/ICO ideally)
 # masthead_title: "Mission: Possible" # Site masthead title
 breadcrumbs: true # Show breadcrumbs in the header
 enable_copy_code_button: true
