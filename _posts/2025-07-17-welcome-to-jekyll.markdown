@@ -1,11 +1,11 @@
 ---
-# # layout: posts
-# layout: single
-# # title:  "Welcome to Jekyll!"
+layout: single
+title:  "Welcome to Jekyll!"
 date:   2025-07-17 12:09:01 +0200
-# categories: jekyll update
-categories: jekyll
+# categories: jekyll
+categories: [posts]
 tags: jekyll, welcome
+excerpt: "This is your first post. Edit or delete it, then start writing!"
 header:
   teaser: /assets/images/teaser_hello_world.png # path to the teaser image
 ---

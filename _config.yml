@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 # title: A1exan10er's Site
-title: "Mission: Possible"
+title: "Mission: Possible" # Site title, shown in the header and browser tab
 subtitle: A place for my thoughts and projects
 # name: A1exan10er
 # email: yangtianqwer@outlook.com
@@ -29,6 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 repository: "A1exan10er/A1exan10er.github.io"
 # teaser: /assets/images/teaser_hello_world.png # path to the teaser image
 logo: /assets/images/mission_possible.png # Site masthead logo
+favicon: /assets/images/mission_possible.png # Favicon shown in the browser tab (use a 32x32 or 48x48 PNG/ICO ideally)
 # masthead_title: "Mission: Possible" # Site masthead title
 breadcrumbs: true # Show breadcrumbs in the header
 enable_copy_code_button: true
@@ -80,6 +81,15 @@ plugins:
 # Permalink structure (removes date from URLs)
 permalink: /:categories/:title/
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  gallery:
+    output: true
+    permalink: /gallery/:title/
+
 # Jekyll Archives configuration
 jekyll-archives:
   enabled:
@@ -87,8 +97,8 @@ jekyll-archives:
     - tags
   layout: archive
   permalinks:
-    category: '/categories/:name/'
-    tag: '/tags/:name/'
+    category: '/categories/:title/'
+    tag: '/tags/:title/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -123,3 +133,10 @@ defaults:
       comments: true
       share: true
       related: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
