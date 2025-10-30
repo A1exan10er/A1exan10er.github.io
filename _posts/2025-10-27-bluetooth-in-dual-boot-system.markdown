@@ -74,3 +74,5 @@ sudo systemctl restart bluetooth
 The steps above are for BLE devices. For classic Bluetooth devices (BR/EDR), the process is simpler. You only need to copy the `LinkKey` value from Windows to Ubuntu.
 
 After completing these steps, the Bluetooth device should be able to connect automatically when switching between Windows and Ubuntu in a dual-boot system.
+
+<script src="/assets/js/gallery-lightbox.js"></script>
