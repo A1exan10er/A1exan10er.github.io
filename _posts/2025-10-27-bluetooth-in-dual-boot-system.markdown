@@ -27,6 +27,10 @@ To resolve this issue, two OSes need to share the same Bluetooth device informat
 
 **1.** Pair the Bluetooth device with Ubuntu first. Then switch to Windows and pair the same device there.
 
+![Screenshot: Ubuntu showing paired device MAC address](/assets/images/screenshots/bluetooth-in-dual-boot-system/1.%20Verbinden%20Ubuntu%20MAC%20Adresse.png)
+
+![Screenshot: Windows showing paired device MAC address](/assets/images/screenshots/bluetooth-in-dual-boot-system/2.%20Verbinden%20Windows.png)
+
 **2.** Go back to Ubuntu and open two terminal windows.
 
 **3.** In the first terminal, navigate to the Bluetooth configuration directory for Ubuntu:
@@ -46,11 +50,16 @@ cd /media/<your-ubuntu-username>/<your-windows-partition>/Windows/System32/confi
 chntpw -e SYSTEM
 cd ControlSet001/Services/BTHPORT/Parameters/Keys/<your-windows-bluetooth-controller-mac-address>/<your-device-mac-address>/
 ```
+![Screenshot: Links Linux, Rechts Windows](/assets/images/screenshots/bluetooth-in-dual-boot-system/4.%20Links%20Linux,%20Rechts%20Windows.png)
+
+![Screenshot: Detailed Windows path to Bluetooth keys](/assets/images/screenshots/bluetooth-in-dual-boot-system/5.%20Windows%20Path.png)
 
 **5.** Copy the corresponding key values from Windows to Ubuntu:
    - In Windows, use command `cat IRK` to look for the keys: `IRK`, `LTK`, `EDIV`, and `ERand`. 
    - **Attention:** The byte order of `ERand` has to be inverted and then converted to a decimal value. For example, if `ERand` is `88 79 6A 5B 4C 3D 2E 1F`, it should be converted to `1F2E3D4C5B6A7988` in hex, which is `2246800662264969608` in decimal. Then use this decimal value in Ubuntu.
    - In Ubuntu, open the `info` file in nano and locate the corresponding fields. Replace the values in Ubuntu with those from Windows.
+
+![Screenshot: Copying keys from Windows to Ubuntu](/assets/images/screenshots/bluetooth-in-dual-boot-system/8.%20IRK%20LTK%20EDIV%20ERand.png)
 
 **6.** Save the changes in the `info` file in Ubuntu and exit nano.
 
@@ -65,3 +74,5 @@ sudo systemctl restart bluetooth
 The steps above are for BLE devices. For classic Bluetooth devices (BR/EDR), the process is simpler. You only need to copy the `LinkKey` value from Windows to Ubuntu.
 
 After completing these steps, the Bluetooth device should be able to connect automatically when switching between Windows and Ubuntu in a dual-boot system.
+
+<script src="/assets/js/gallery-lightbox.js"></script>

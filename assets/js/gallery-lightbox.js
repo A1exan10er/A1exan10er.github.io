@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   galleryImages.forEach(function(img) {
     // Only apply to images that are not the header image
-    if (img.src && img.src.includes('/assets/images/gallery/') && !img.closest('header')) {
+    // Support both /assets/images/gallery/ and /assets/images/screenshots/
+    if (img.src && (img.src.includes('/assets/images/gallery/') || img.src.includes('/assets/images/screenshots/')) && !img.closest('header')) {
       img.style.cursor = 'pointer';
       img.addEventListener('click', function(e) {
         e.preventDefault();
