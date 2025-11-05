@@ -75,4 +75,19 @@ The steps above are for BLE devices. For classic Bluetooth devices (BR/EDR), the
 
 After completing these steps, the Bluetooth device should be able to connect automatically when switching between Windows and Ubuntu in a dual-boot system.
 
+### Q&A
+1. **What if there are multiple Bluetooth devices?** 
+   ![Situation - Multiple Devices Number](/assets/images/screenshots/bluetooth-in-dual-boot-system/Situation%20-%20Multiple%20Devices%20Number.png)
+   - In Ubuntu terminal, check the `info` file for each device. The file includes the device name. An example entry looks like this:
+     ```
+     [General]
+     Name=MX Anywhere 3s
+     ```
+     ![Screenshot: Situation - Multiple Devices Number - Correct Info](/assets/images/screenshots/bluetooth-in-dual-boot-system/Situation%20-%20Multiple%20Devices%20Number%20-%20Correct%20Info.png)
+2. **What if the device still doesn't connect?**
+   - Ensure the keys are copied correctly and the byte order for `ERand` is inverted properly and converted to decimal. Double-check the MAC addresses to ensure they match.
+   - The device MAC address should be the same in both OSes. If they differ, rename the folder in Ubuntu to match the Windows MAC address.
+   ![Screenshot: MAC Address](/assets/images/screenshots/bluetooth-in-dual-boot-system/MAC%20Adresse.png)
+   - Step 3 shows how to rename the folder in Ubuntu.
+
 <script src="/assets/js/gallery-lightbox.js"></script>
